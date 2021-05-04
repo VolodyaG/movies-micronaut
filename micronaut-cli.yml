@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.volodya
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, gradle, http-client, jdbc-hikari, jib, junit, kotlin, kotlin-application, kotlin-extension-functions, logback, netty-server, openapi, postgres, readme, shade, testcontainers, yaml]

@@ -1,0 +1,23 @@
+micronaut:
+  application:
+    name: movies-micronaut
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+      rapidoc:
+        paths: classpath:META-INF/swagger/views/rapidoc
+        mapping: /rapidoc/**
+datasources:
+  default:
+    jdbc-url: jdbc:postgresql://127.0.0.1:5432/movies_db
+    driverClassName: org.postgresql.Driver
+    username: ${JDBC_USERNAME:postgres}
+    password: ${JDBC_PSWD:admin}
+jackson:
+  serialization:
+    writeDatesAsTimestamps: false
